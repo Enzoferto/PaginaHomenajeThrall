@@ -1,162 +1,264 @@
-@import url('https://fonts.cdnfonts.com/css/lifecraft');
+@import url("https://fonts.cdnfonts.com/css/lifecraft");
 
-
-html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-*{
-font-family: 'LifeCraft', sans-serif;
-font-size: 1em;
+* {
+  font-family: "LifeCraft", sans-serif;
+  font-size: 1em;
 }
 
-body{
-	background: linear-gradient(180deg, rgba(255,153,0,0.7) 0%, rgba(255,213,83,0.7) 25%, rgba(179,124,48,0.7) 50%, rgba(150,64,0,0.7) 75%, rgba(74,0,0,0.7) 100%);
-	height: 100vh;
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 153, 0, 0.7) 0%,
+    rgba(255, 213, 83, 0.7) 25%,
+    rgba(179, 124, 48, 0.7) 50%,
+    rgba(150, 64, 0, 0.7) 75%,
+    rgba(74, 0, 0, 0.7) 100%
+  );
 }
 
-.backgroundContainer{
+.backgroundContainer {
   position: absolute;
   z-index: -600;
-	top: 71vh;
-  }
-
-.title{
-text-align: center;
-font-size: 4rem;
-margin: 40px 0 25px 0;
-padding: 0;
-text-shadow: 6px 6px 10px red;
+  top: 71vh;
+  width: 100%;
 }
-.descripcion{
-	text-align: center;
-	font-size: 1.4rem;
-	padding-bottom: 30px;
+.titleContainer{
+	height:15vh;
 }
 
+.title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 40px 0 25px 0;
+  padding: 0;
+  text-shadow: 6px 6px 10px red;
+}
+.descripcion {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 30px;
+}
 
-.primeraImagen{
+.img-div{
+	height:50vh;
+}
+
+.primeraImagen {
   display: block;
   max-width: 100%;
-	width: 45%;
-	margin: auto;
-	border: 2px ;
-	border-radius: 10px;
-	
+  width: 45%;
+  margin: auto;
+  border: 2px;
+  border-radius: 10px;
 }
-.pieDeImagen{
-	text-align: left;
-	font-size: 1.1rem;
-	
-}
-
-.tributeInfo{
-	display: flex;
-	justify-content: space-around;
-	align-items:center;
-	position: absolute;
-	top: 73vh;
-	
-	
-}
-.logoHorda{
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-h2{
-	height: 100px;
-	width: 17%;
-	text-align: center;
-	position:relative;
-	bottom: 300px;
-	font-size: 2.5rem;
-	letter-spacing: 2px;
-	text-shadow: 3px 3px 6px #bd9e00, 6px 6px 10px #ff9900, 10px 10px 14px #005b00; 
+.pieDeImagen {
+  text-align: left;
+  font-size: 1.1rem;
+  width: 100%;
 }
 
-.logoHorda img{
-	height: 15%;
-	width:  7%;
-	position:absolute;
-	margin-top: 4%;
-
+.tributeInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10vh;
+}
+.logoHorda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+h2 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  bottom: 300px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px #bd9e00, 6px 6px 10px #ff9900, 10px 10px 14px #005b00;
 }
 
-.primeraBox{
-	background: linear-gradient(180deg, rgba(255,153,0,0.6) 0%, rgba(221,156,0,0.6) 25%, rgba(202,157,0,0.6) 50%, rgba(189,158,0,0.6) 75%, rgba(27,146,23,0.6) 100%);
-	height: 860px;
-	width: 30%;
-	padding: 30px 4% 60px 4%; 
+.logoHorda img {
+  height: 15%;
+  width: 7%;
+  position: absolute;
+  margin-top: 4%;
 }
 
-.segundaBox{
-background: linear-gradient(180deg, rgba(255,153,0,0.6) 0%, rgba(255,213,83,0.6) 24%, rgba(179,124,48,0.6) 50%, rgba(150,64,0,0.6) 76%, rgba(74,0,0,0.6) 100%);
-	height: 850px;
-	width: 30%;
-	padding: 30px 4% 70px 4%;
+.primeraBox {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 153, 0, 0.6) 0%,
+    rgba(221, 156, 0, 0.6) 25%,
+    rgba(202, 157, 0, 0.6) 50%,
+    rgba(189, 158, 0, 0.6) 75%,
+    rgba(27, 146, 23, 0.6) 100%
+  );
+  height: 1100px;
+  width: 30%;
 }
 
-.tributeInfo  h3{
-	font-size: 1.6rem;
-	text-align: justify;
-	letter-spacing: 2px;
-	
-}
-.tributeInfo p{
-	font-size: 1.4rem;
-	text-align: justify;
-	text-indent:4%;
-}
-.tributeInfo .primeraBox h3{
-	text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #7a2c00;
+.segundaBox {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 153, 0, 0.6) 0%,
+    rgba(255, 213, 83, 0.6) 24%,
+    rgba(179, 124, 48, 0.6) 50%,
+    rgba(150, 64, 0, 0.6) 76%,
+    rgba(74, 0, 0, 0.6) 100%
+  );
+  height: 1100px;
+  width: 30%;
 }
 
-.tributeInfo .segundaBox h3{
-	text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #007600;
-
+.tributeInfo h3 {
+  font-size: 1.6rem;
+  text-align: justify;
+  letter-spacing: 2px;
+  margin: 2rem 2rem 0.5rem 2rem;
+}
+.tributeInfo p {
+  font-size: 1.4rem;
+  text-align: justify;
+  text-indent: 4%;
+  margin: 0rem 2rem 0.5rem 2rem;
+}
+.tributeInfo .primeraBox h3 {
+  text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #7a2c00;
 }
 
+.tributeInfo .segundaBox h3 {
+  text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #007600;
+}
 
 /* 1) background-image: linear-gradient(to bottom, #ff9900, #d99d00, #b29e00, #8c9d00, #659900, #4d951b, #32912a, #008c37, #008746, #008152, #007b5a, #007560);*/
- /* 2) background-image: linear-gradient(to bottom, #ff9900, #e17710, #c05815, #9e3b15, #7a2111, #7b2713, #7d2c15, #7e3117, #a35623, #c67d2f, #e5a83f, #ffd553); */
- 
+/* 2) background-image: linear-gradient(to bottom, #ff9900, #e17710, #c05815, #9e3b15, #7a2111, #7b2713, #7d2c15, #7e3117, #a35623, #c67d2f, #e5a83f, #ffd553); */
+
